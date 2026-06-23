@@ -1,0 +1,3 @@
+import EMathicaWorkspaceKit
+
+struct PlaneObjectNamingService: WorkspaceObjectNamingServiceProtocol {}

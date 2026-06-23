@@ -1,0 +1,31 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gModel" x1="160" y1="120" x2="880" y2="920" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4DA1FF"/>
+      <stop offset="1" stop-color="#4568FF"/>
+    </linearGradient>
+    <filter id="softShadow" x="0" y="0" width="1024" height="1024" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="26" stdDeviation="34" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+    <filter id="glow" x="-120" y="-120" width="1264" height="1264" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="glass" x1="250" y1="120" x2="820" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.42"/>
+      <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0.11"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.22"/>
+    </linearGradient>
+  </defs>
+  <rect x="96" y="96" width="832" height="832" rx="196" fill="url(#gModel)" filter="url(#softShadow)"/>
+  <rect x="106" y="106" width="812" height="812" rx="186" fill="url(#glass)" opacity="0.42"/>
+  <path d="M190 250C330 135 650 120 820 300" stroke="white" stroke-opacity="0.25" stroke-width="28" stroke-linecap="round"/>
+  
+  <g filter="url(#glow)" stroke="#FFFFFF" stroke-width="54" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M512 190L777 342V650L512 804L247 650V342L512 190Z"/>
+    <path d="M247 342L512 496L777 342" opacity="0.9"/>
+    <path d="M512 496V804" opacity="0.9"/>
+    <path d="M247 650L512 496" opacity="0.55"/>
+    <path d="M777 650L512 496" opacity="0.55"/>
+  </g>
+</svg>

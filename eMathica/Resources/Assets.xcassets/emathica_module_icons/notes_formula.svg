@@ -1,0 +1,30 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gNotes" x1="160" y1="120" x2="880" y2="920" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#73D671"/>
+      <stop offset="1" stop-color="#3AA96B"/>
+    </linearGradient>
+    <filter id="softShadow" x="0" y="0" width="1024" height="1024" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="26" stdDeviation="34" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+    <filter id="glow" x="-120" y="-120" width="1264" height="1264" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="glass" x1="250" y1="120" x2="820" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.42"/>
+      <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0.11"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.22"/>
+    </linearGradient>
+  </defs>
+  <rect x="96" y="96" width="832" height="832" rx="196" fill="url(#gNotes)" filter="url(#softShadow)"/>
+  <rect x="106" y="106" width="812" height="812" rx="186" fill="url(#glass)" opacity="0.42"/>
+  <path d="M190 250C330 135 650 120 820 300" stroke="white" stroke-opacity="0.25" stroke-width="28" stroke-linecap="round"/>
+  
+  <g filter="url(#glow)" stroke="#FFFFFF" stroke-width="50" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M295 722L362 531L627 266C671 222 743 222 787 266C831 310 831 382 787 426L522 691L331 758L295 722Z"/>
+    <path d="M625 268L785 428" opacity="0.75"/>
+    <path d="M610 618H790" opacity="0.72"/>
+    <path d="M650 540H830" opacity="0.45"/>
+  </g>
+</svg>

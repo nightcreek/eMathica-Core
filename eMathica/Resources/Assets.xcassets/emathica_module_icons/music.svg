@@ -1,0 +1,31 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gMusic" x1="160" y1="120" x2="880" y2="920" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF60C8"/>
+      <stop offset="1" stop-color="#8B5CFF"/>
+    </linearGradient>
+    <filter id="softShadow" x="0" y="0" width="1024" height="1024" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="26" stdDeviation="34" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+    <filter id="glow" x="-120" y="-120" width="1264" height="1264" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="glass" x1="250" y1="120" x2="820" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.42"/>
+      <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0.11"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.22"/>
+    </linearGradient>
+  </defs>
+  <rect x="96" y="96" width="832" height="832" rx="196" fill="url(#gMusic)" filter="url(#softShadow)"/>
+  <rect x="106" y="106" width="812" height="812" rx="186" fill="url(#glass)" opacity="0.42"/>
+  <path d="M190 250C330 135 650 120 820 300" stroke="white" stroke-opacity="0.25" stroke-width="28" stroke-linecap="round"/>
+  
+  <g filter="url(#glow)" stroke="#FFFFFF" stroke-width="54" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M180 540C245 415 310 415 375 540C440 665 505 665 570 540C635 415 700 415 765 540C800 607 830 642 858 646"/>
+    <circle cx="252" cy="718" r="34" fill="#FFFFFF" stroke="none" opacity="0.92"/>
+    <circle cx="512" cy="718" r="34" fill="#FFFFFF" stroke="none" opacity="0.92"/>
+    <circle cx="772" cy="718" r="34" fill="#FFFFFF" stroke="none" opacity="0.92"/>
+    <path d="M252 718V642M512 718V642M772 718V642" opacity="0.65"/>
+  </g>
+</svg>
