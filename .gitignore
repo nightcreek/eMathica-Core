@@ -6,6 +6,7 @@ Packages/*/.swiftpm/
 
 # Xcode user data
 *.xcuserstate
+*.xcscmblueprint
 *.xcuserdata/
 **/xcuserdata/
 **/UserInterfaceState.xcuserstate
@@ -17,6 +18,15 @@ __MACOSX/
 # DerivedData
 DerivedData/
 
+# Environment / local config
+.env
+*.env
+
+# Logs
+*.log
+
 # Agent / IDE
+.vscode/
+.idea/
 .reasonix/
 reasonix.toml
