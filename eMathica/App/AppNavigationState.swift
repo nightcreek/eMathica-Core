@@ -9,7 +9,7 @@ final class AppNavigationState {
     private let projectStore: any ProjectStore
 
     init(projectStore: (any ProjectStore)? = nil) {
-        self.projectStore = projectStore ?? (try? LocalProjectStore()) ?? HomeMockProjectStore()
+        self.projectStore = projectStore ?? (try? LocalProjectStore(previewRenderer: { ProjectPreviewRenderer.renderPNGData(for: $0) })) ?? HomeMockProjectStore()
     }
 
     func goHome() {

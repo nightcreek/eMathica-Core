@@ -10,7 +10,7 @@ struct LocalProjectStore: ProjectStore {
     init(
         fileManager: FileManager = .default,
         baseDirectoryURLOverride: URL? = nil,
-        previewRenderer: @escaping (EMathicaDocument) -> Data? = { ProjectPreviewRenderer.renderPNGData(for: $0) }
+        previewRenderer: @escaping (EMathicaDocument) -> Data?
     ) throws {
         self.fileManager = fileManager
         self.previewRenderer = previewRenderer

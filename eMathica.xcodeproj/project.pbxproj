@@ -6,17 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		3C5280382FD5B9400015EE51 /* EMathicaDocumentKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678A00 /* EMathicaDocumentKit */; };
-		3C5280392FD5B9400015EE51 /* EMathicaThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678B00 /* EMathicaThemeKit */; };
-		3C52803A2FD5B9400015EE51 /* EMathicaWorkspaceKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678C00 /* EMathicaWorkspaceKit */; };
-		3C52803B2FD5B9400015EE51 /* EMathicaDocumentKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678A02 /* EMathicaDocumentKit */; };
-		3C52803C2FD5B9400015EE51 /* EMathicaThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678B02 /* EMathicaThemeKit */; };
-		3C52803D2FD5B9400015EE51 /* EMathicaWorkspaceKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678C02 /* EMathicaWorkspaceKit */; };
-		A1B2C3D4E5F6012345678901 /* EMathicaMathCore in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678900 /* EMathicaMathCore */; };
-		A1B2C3D4E5F6012345678903 /* EMathicaMathCore in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678902 /* EMathicaMathCore */; };
-		A1B2C3D4E5F6012345678D01 /* EMathicaMathInputKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678D00 /* EMathicaMathInputKit */; };
-		A1B2C3D4E5F6012345678D03 /* EMathicaMathInputKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678D02 /* EMathicaMathInputKit */; };
+		/* Begin PBXBuildFile section */
+			3C5280382FD5B9400015EE51 /* EMathicaDocumentKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678A00 /* EMathicaDocumentKit */; };
+			3C5280392FD5B9400015EE51 /* EMathicaThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678B00 /* EMathicaThemeKit */; };
+			3C52803A2FD5B9400015EE51 /* EMathicaWorkspaceKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678C00 /* EMathicaWorkspaceKit */; };
+			3C52803B2FD5B9400015EE51 /* EMathicaDocumentKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678A02 /* EMathicaDocumentKit */; };
+			3C52803C2FD5B9400015EE51 /* EMathicaThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678B02 /* EMathicaThemeKit */; };
+			3C52803D2FD5B9400015EE51 /* EMathicaWorkspaceKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678C02 /* EMathicaWorkspaceKit */; };
+			A1B2C3D4E5F6012345678901 /* EMathicaMathCore in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678900 /* EMathicaMathCore */; };
+			A1B2C3D4E5F6012345678903 /* EMathicaMathCore in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678902 /* EMathicaMathCore */; };
+			A1B2C3D4E5F6012345678D01 /* EMathicaMathInputKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678D00 /* EMathicaMathInputKit */; };
+			A1B2C3D4E5F6012345678D03 /* EMathicaMathInputKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678D02 /* EMathicaMathInputKit */; };
+			A1B2C3D4E5F6012345678E01 /* EMathicaHomeFeature in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678E00 /* EMathicaHomeFeature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,11 +46,19 @@
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		8F3A4B5C6D7E8F9012345678 /* Exceptions for "eMathica" folder in "eMathica" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				AI/README.md,
-				AI/ProductDesign/README.md,
-				App/OpenMathInkCollectorApp.swift,
-				Docs/README.md,
+				membershipExceptions = (
+					AI/README.md,
+					CalculatorModules/Data/README.md,
+					CalculatorModules/Modeling/README.md,
+					CalculatorModules/Music/README.md,
+					CalculatorModules/Notes/README.md,
+					CalculatorModules/Plane/README.md,
+					CalculatorModules/Space/README.md,
+					CoreHome/README.md,
+					PluginSystem/README.md,
+					AI/ProductDesign/README.md,
+					App/OpenMathInkCollectorApp.swift,
+					Docs/README.md,
 				FeatureUtilities/Files/DatasetFileBrowserView.swift,
 				FeatureUtilities/Files/StatisticsView.swift,
 				FeatureUtilities/Handwriting/DrawingToolSettings.swift,
@@ -93,18 +102,19 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3CD3F49C2FADE7C5001036FF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C52803A2FD5B9400015EE51 /* EMathicaWorkspaceKit in Frameworks */,
-				3C5280392FD5B9400015EE51 /* EMathicaThemeKit in Frameworks */,
-				3C5280382FD5B9400015EE51 /* EMathicaDocumentKit in Frameworks */,
-				A1B2C3D4E5F6012345678D01 /* EMathicaMathInputKit in Frameworks */,
-				A1B2C3D4E5F6012345678901 /* EMathicaMathCore in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+			3CD3F49C2FADE7C5001036FF /* Frameworks */ = {
+				isa = PBXFrameworksBuildPhase;
+				buildActionMask = 2147483647;
+				files = (
+					3C52803A2FD5B9400015EE51 /* EMathicaWorkspaceKit in Frameworks */,
+					3C5280392FD5B9400015EE51 /* EMathicaThemeKit in Frameworks */,
+					3C5280382FD5B9400015EE51 /* EMathicaDocumentKit in Frameworks */,
+					A1B2C3D4E5F6012345678D01 /* EMathicaMathInputKit in Frameworks */,
+					A1B2C3D4E5F6012345678901 /* EMathicaMathCore in Frameworks */,
+					A1B2C3D4E5F6012345678E01 /* EMathicaHomeFeature in Frameworks */,
+				);
+				runOnlyForDeploymentPostprocessing = 0;
+			};
 		3CD3F4AE2FADE7C9001036FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,6 +182,7 @@
 				A1B2C3D4E5F6012345678B00 /* EMathicaThemeKit */,
 				A1B2C3D4E5F6012345678C00 /* EMathicaWorkspaceKit */,
 				A1B2C3D4E5F6012345678D00 /* EMathicaMathInputKit */,
+				A1B2C3D4E5F6012345678E00 /* EMathicaHomeFeature */,
 			);
 			productName = eMathica;
 			productReference = 3CD3F49F2FADE7C5001036FF /* eMathica.app */;
@@ -264,8 +275,9 @@
 				A1B2C3D4E5F6012345678904 /* XCLocalSwiftPackageReference "Packages/EMathicaMathCore" */,
 				A1B2C3D4E5F6012345678A04 /* XCLocalSwiftPackageReference "../../SharedLibraries/EMathicaDocumentKit" */,
 				A1B2C3D4E5F6012345678B04 /* XCLocalSwiftPackageReference "../../SharedLibraries/EMathicaThemeKit" */,
-				A1B2C3D4E5F6012345678C04 /* XCLocalSwiftPackageReference "../../SharedLibraries/EMathicaWorkspaceKit" */,
-				A1B2C3D4E5F6012345678D04 /* XCLocalSwiftPackageReference "../../SharedLibraries/EMathicaMathInputKit" */,
+		A1B2C3D4E5F6012345678C04 /* XCLocalSwiftPackageReference "../../SharedLibraries/EMathicaWorkspaceKit" */,
+		A1B2C3D4E5F6012345678D04 /* XCLocalSwiftPackageReference "../../SharedLibraries/EMathicaMathInputKit" */,
+		A1B2C3D4E5F6012345678E04 /* XCLocalSwiftPackageReference "../../SharedLibraries/EMathicaHomeFeature" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3CD3F4A02FADE7C5001036FF /* Products */;
@@ -814,6 +826,10 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../SharedLibraries/EMathicaMathInputKit;
 		};
+		A1B2C3D4E5F6012345678E04 /* XCLocalSwiftPackageReference "../../SharedLibraries/EMathicaHomeFeature" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../SharedLibraries/EMathicaHomeFeature;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -866,6 +882,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A1B2C3D4E5F6012345678D04 /* XCLocalSwiftPackageReference "../../SharedLibraries/EMathicaMathInputKit" */;
 			productName = EMathicaMathInputKit;
+		};
+		A1B2C3D4E5F6012345678E00 /* EMathicaHomeFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1B2C3D4E5F6012345678E04 /* XCLocalSwiftPackageReference "../../SharedLibraries/EMathicaHomeFeature" */;
+			productName = EMathicaHomeFeature;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
