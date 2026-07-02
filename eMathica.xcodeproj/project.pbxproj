@@ -15,8 +15,8 @@
 			3C52803D2FD5B9400015EE51 /* EMathicaWorkspaceKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678C02 /* EMathicaWorkspaceKit */; };
 			A1B2C3D4E5F6012345678901 /* EMathicaMathCore in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678900 /* EMathicaMathCore */; };
 			A1B2C3D4E5F6012345678903 /* EMathicaMathCore in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678902 /* EMathicaMathCore */; };
-			A1B2C3D4E5F6012345678D01 /* EMathicaMathInputKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678D00 /* EMathicaMathInputKit */; };
-			A1B2C3D4E5F6012345678D03 /* EMathicaMathInputKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678D02 /* EMathicaMathInputKit */; };
+			A1B2C3D4E5F6012345678D01 /* EMathicaMathInputCore in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678D00 /* EMathicaMathInputCore */; };
+			A1B2C3D4E5F6012345678D03 /* EMathicaMathInputCore in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678D02 /* EMathicaMathInputCore */; };
 			A1B2C3D4E5F6012345678E01 /* EMathicaHomeFeature in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3D4E5F6012345678E00 /* EMathicaHomeFeature */; };
 /* End PBXBuildFile section */
 
@@ -109,7 +109,7 @@
 					3C52803A2FD5B9400015EE51 /* EMathicaWorkspaceKit in Frameworks */,
 					3C5280392FD5B9400015EE51 /* EMathicaThemeKit in Frameworks */,
 					3C5280382FD5B9400015EE51 /* EMathicaDocumentKit in Frameworks */,
-					A1B2C3D4E5F6012345678D01 /* EMathicaMathInputKit in Frameworks */,
+					A1B2C3D4E5F6012345678D01 /* EMathicaMathInputCore in Frameworks */,
 					A1B2C3D4E5F6012345678901 /* EMathicaMathCore in Frameworks */,
 					A1B2C3D4E5F6012345678E01 /* EMathicaHomeFeature in Frameworks */,
 				);
@@ -122,7 +122,7 @@
 				3C52803D2FD5B9400015EE51 /* EMathicaWorkspaceKit in Frameworks */,
 				3C52803C2FD5B9400015EE51 /* EMathicaThemeKit in Frameworks */,
 				3C52803B2FD5B9400015EE51 /* EMathicaDocumentKit in Frameworks */,
-				A1B2C3D4E5F6012345678D03 /* EMathicaMathInputKit in Frameworks */,
+				A1B2C3D4E5F6012345678D03 /* EMathicaMathInputCore in Frameworks */,
 				A1B2C3D4E5F6012345678903 /* EMathicaMathCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,7 +181,7 @@
 				A1B2C3D4E5F6012345678A00 /* EMathicaDocumentKit */,
 				A1B2C3D4E5F6012345678B00 /* EMathicaThemeKit */,
 				A1B2C3D4E5F6012345678C00 /* EMathicaWorkspaceKit */,
-				A1B2C3D4E5F6012345678D00 /* EMathicaMathInputKit */,
+				A1B2C3D4E5F6012345678D00 /* EMathicaMathInputCore */,
 				A1B2C3D4E5F6012345678E00 /* EMathicaHomeFeature */,
 			);
 			productName = eMathica;
@@ -210,7 +210,7 @@
 				A1B2C3D4E5F6012345678A02 /* EMathicaDocumentKit */,
 				A1B2C3D4E5F6012345678B02 /* EMathicaThemeKit */,
 				A1B2C3D4E5F6012345678C02 /* EMathicaWorkspaceKit */,
-				A1B2C3D4E5F6012345678D02 /* EMathicaMathInputKit */,
+				A1B2C3D4E5F6012345678D02 /* EMathicaMathInputCore */,
 			);
 			productName = eMathicaTests;
 			productReference = 3CD3F4B12FADE7C9001036FF /* eMathicaTests.xctest */;
@@ -873,15 +873,15 @@
 			package = A1B2C3D4E5F6012345678C04 /* XCLocalSwiftPackageReference "../../SharedLibraries/EMathicaWorkspaceKit" */;
 			productName = EMathicaWorkspaceKit;
 		};
-		A1B2C3D4E5F6012345678D00 /* EMathicaMathInputKit */ = {
+		A1B2C3D4E5F6012345678D00 /* EMathicaMathInputCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A1B2C3D4E5F6012345678D04 /* XCLocalSwiftPackageReference "../../SharedLibraries/EMathicaMathInputKit" */;
-			productName = EMathicaMathInputKit;
+			productName = EMathicaMathInputCore;
 		};
-		A1B2C3D4E5F6012345678D02 /* EMathicaMathInputKit */ = {
+		A1B2C3D4E5F6012345678D02 /* EMathicaMathInputCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A1B2C3D4E5F6012345678D04 /* XCLocalSwiftPackageReference "../../SharedLibraries/EMathicaMathInputKit" */;
-			productName = EMathicaMathInputKit;
+			productName = EMathicaMathInputCore;
 		};
 		A1B2C3D4E5F6012345678E00 /* EMathicaHomeFeature */ = {
 			isa = XCSwiftPackageProductDependency;
