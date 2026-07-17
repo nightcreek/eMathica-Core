@@ -429,6 +429,8 @@ enum PlaneDraftPreviewService {
         print("[PlanePreview][SamplingCompare] input=\(comparison.inputSummary) intent=\(comparison.intentSummary) legacySegments=\(comparison.legacySegmentCount) legacyPoints=\(comparison.legacyPointCount) semanticSegments=\(comparison.semanticSegmentCount) semanticPoints=\(comparison.semanticPointCount) semanticIssues=\(comparison.semanticIssueCount) semanticIssueSummary=\(comparison.semanticIssueSummary) fallbackReason=\(comparison.fallbackReason ?? "none")")
     }
 
+    #endif
+
     private static func makeSemanticSamplingAttempt(
         formulaInputState: FormulaInputState,
         document: EMathicaDocument,
@@ -525,6 +527,4 @@ enum PlaneDraftPreviewService {
         }
         return (sampleSet, adapted, intentSummary, nil, diagnostics)
     }
-
-    #endif
 }

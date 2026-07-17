@@ -1,6 +1,16 @@
-#if DEBUG
 import Foundation
 import EMathicaMathCore
+
+enum PlaneSemanticFallbackReason: String {
+    case noSemanticState = "no semantic state"
+    case semanticBlockingError = "semantic blocking error"
+    case missingGraphClassification = "missing graph classification"
+    case unsupportedGraphIntent = "unsupported graph intent"
+    case emptySemanticSampleSet = "empty semantic sample set"
+    case adapterFailed = "adapter failed"
+}
+
+#if DEBUG
 
 struct PlaneSamplingComparisonDebugResult {
     var inputSummary: String
@@ -12,15 +22,6 @@ struct PlaneSamplingComparisonDebugResult {
     var semanticIssueCount: Int
     var semanticIssueSummary: String
     var fallbackReason: String?
-}
-
-enum PlaneSemanticFallbackReason: String {
-    case noSemanticState = "no semantic state"
-    case semanticBlockingError = "semantic blocking error"
-    case missingGraphClassification = "missing graph classification"
-    case unsupportedGraphIntent = "unsupported graph intent"
-    case emptySemanticSampleSet = "empty semantic sample set"
-    case adapterFailed = "adapter failed"
 }
 
 enum PlaneSamplingComparisonDebugFormatter {
