@@ -6,6 +6,9 @@ import EMathicaWorkspaceKit
 struct AppRootView: View {
     @Environment(AppNavigationState.self) private var navigation
     @State private var homeState: CoreHomeState
+    #if DEBUG
+    @State private var showsPlaceholderComparison = false
+    #endif
 
     init(projectStore: any ProjectStore) {
         let homeModuleCatalog = HomeModuleCatalog(
@@ -41,7 +44,19 @@ struct AppRootView: View {
         Group {
             switch navigation.route {
             case .home:
-                CoreHomeView(
+                homeView
+            case .workspace(let module, let document):
+                WorkspaceView(
+                    module: module,
+                    document: document,
+                    configuration: workspaceConfiguration(for: module)
+                )
+            }
+        }
+    }
+
+    private var homeView: some View {
+        let content = CoreHomeView(
                     selectedFilter: Binding(
                         get: { homeState.ui.selectedFilter },
                         set: { homeState.setFilter($0) }
@@ -110,13 +125,63 @@ struct AppRootView: View {
                         homeState.reloadProjects()
                     }
                 )
-            case .workspace(let module, let document):
-                WorkspaceView(
-                    module: module,
-                    document: document,
-                    configuration: workspaceConfiguration(for: module)
-                )
+
+        #if DEBUG
+        return AnyView(
+            ZStack(alignment: .bottomTrailing) {
+                content
+                Menu {
+                    Button("Open Valid Formula Rendering Fixture") {
+                        openFormulaRenderingBaselineFixture()
+                    }
+                    Button("Generate Valid Formula Rendering Fixture") {
+                        generateFormulaRenderingBaselineFixture()
+                    }
+                    Button("Placeholder Rendering Comparison") {
+                        showsPlaceholderComparison = true
+                    }
+                } label: {
+                    Label("Developer", systemImage: "wrench.and.screwdriver")
+                        .font(.system(size: 12, weight: .semibold))
+                        .padding(.horizontal, 14)
+                        .padding(.vertical, 10)
+                        .background(.thinMaterial, in: Capsule())
+                }
+                .padding(.trailing, 20)
+                .padding(.bottom, 20)
+                .accessibilityLabel("开发调试入口")
             }
+            .sheet(isPresented: $showsPlaceholderComparison) {
+                PlaceholderRenderingComparisonView()
+            }
+        )
+        #else
+        return AnyView(content)
+        #endif
+    }
+
+    private func openFormulaRenderingBaselineFixture() {
+        do {
+            _ = try FormulaRenderingBaselineFixtureWriter.exportFixtureToSourceTree()
+            let projectID = try FormulaRenderingBaselineFixtureImporter.importIntoLocalProjectStore()
+            homeState.reloadProjects()
+            guard let project = homeState.projects.first(where: { $0.id == projectID }) else {
+                homeState.lastErrorMessage = "已导入基准 fixture，但未在最近项目列表中找到。"
+                return
+            }
+            let result = try homeState.openProject(project)
+            navigation.openWorkspace(module: result.module, document: result.document)
+        } catch {
+            homeState.lastErrorMessage = "打开基准 fixture 失败：\(error.localizedDescription)"
+        }
+    }
+
+    private func generateFormulaRenderingBaselineFixture() {
+        do {
+            let export = try FormulaRenderingBaselineFixtureWriter.exportFixtureToSourceTree()
+            homeState.lastErrorMessage = "已生成合法 fixture：\(export.fixtureURL.path)"
+        } catch {
+            homeState.lastErrorMessage = "生成合法 fixture 失败：\(error.localizedDescription)"
         }
     }
 

@@ -1,0 +1,255 @@
+{
+  "canvasState" : {
+    "maxScale" : 1000000000,
+    "minScale" : 1e-06,
+    "origin" : [
+      0,
+      0
+    ],
+    "scale" : 60,
+    "showAxis" : true,
+    "showGrid" : true
+  },
+  "id" : "6C6E5C13-6BA5-4F8A-B59F-D70F83FA9B84",
+  "metadata" : {
+    "calculatorType" : "plane",
+    "createdAt" : "2026-07-11T18:10:55Z",
+    "id" : "6C6E5C13-6BA5-4F8A-B59F-D70F83FA9B84",
+    "moduleID" : "plane",
+    "previewImageName" : "preview.png",
+    "title" : "Formula Rendering Baseline",
+    "updatedAt" : "2026-07-11T18:10:55Z",
+    "version" : "0.1"
+  },
+  "moduleID" : "plane",
+  "objects" : [
+    {
+      "expression" : {
+        "computeExpression" : "abcde",
+        "displayText" : "abcde",
+        "editorASTData" : "{\"root\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"a\"}},{\"character\":{\"_0\":\"b\"}},{\"character\":{\"_0\":\"c\"}},{\"character\":{\"_0\":\"d\"}},{\"character\":{\"_0\":\"e\"}}]}},\"cursor\":{\"offset\":0,\"path\":[]}}",
+        "originalLatex" : "abcde",
+        "rawInput" : "abcde",
+        "sourceExpression" : "abcde"
+      },
+      "id" : "DD3E762C-F368-4A10-8393-9A640E94948C",
+      "isVisible" : true,
+      "name" : "A01",
+      "style" : {
+        "colorToken" : "blue",
+        "fillOpacity" : 0.18,
+        "lineStyle" : "solid",
+        "lineWidth" : 2,
+        "opacity" : 1,
+        "pointSize" : 6
+      },
+      "type" : "function"
+    },
+    {
+      "expression" : {
+        "computeExpression" : "abcdefghij",
+        "displayText" : "abcdefghij",
+        "editorASTData" : "{\"cursor\":{\"offset\":0,\"path\":[]},\"root\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"a\"}},{\"character\":{\"_0\":\"b\"}},{\"character\":{\"_0\":\"c\"}},{\"character\":{\"_0\":\"d\"}},{\"character\":{\"_0\":\"e\"}},{\"character\":{\"_0\":\"f\"}},{\"character\":{\"_0\":\"g\"}},{\"character\":{\"_0\":\"h\"}},{\"character\":{\"_0\":\"i\"}},{\"character\":{\"_0\":\"j\"}}]}}}",
+        "originalLatex" : "abcdefghij",
+        "rawInput" : "abcdefghij",
+        "sourceExpression" : "abcdefghij"
+      },
+      "id" : "C68D38AA-AFE5-4BDC-BB0B-CDF1EA286749",
+      "isVisible" : true,
+      "name" : "A02",
+      "style" : {
+        "colorToken" : "blue",
+        "fillOpacity" : 0.18,
+        "lineStyle" : "solid",
+        "lineWidth" : 2,
+        "opacity" : 1,
+        "pointSize" : 6
+      },
+      "type" : "function"
+    },
+    {
+      "expression" : {
+        "computeExpression" : "(x)^(2)",
+        "displayText" : "x^{2}",
+        "editorASTData" : "{\"cursor\":{\"offset\":0,\"path\":[]},\"root\":{\"sequence\":{\"_0\":[{\"template\":{\"_0\":{\"kind\":{\"superscript\":{}},\"fields\":[{\"id\":{\"base\":{}},\"node\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"x\"}}]}}},{\"id\":{\"exponent\":{}},\"node\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"2\"}}]}}}]}}}]}}}",
+        "originalLatex" : "x^2",
+        "rawInput" : "x^{2}",
+        "sourceExpression" : "x^{2}"
+      },
+      "id" : "0A6E7902-DDDF-4678-9691-C19322247B86",
+      "isVisible" : true,
+      "name" : "B01",
+      "style" : {
+        "colorToken" : "blue",
+        "fillOpacity" : 0.18,
+        "lineStyle" : "solid",
+        "lineWidth" : 2,
+        "opacity" : 1,
+        "pointSize" : 6
+      },
+      "type" : "function"
+    },
+    {
+      "expression" : {
+        "computeExpression" : "(e)^(xy)",
+        "displayText" : "e^{xy}",
+        "editorASTData" : "{\"cursor\":{\"offset\":0,\"path\":[]},\"root\":{\"sequence\":{\"_0\":[{\"template\":{\"_0\":{\"kind\":{\"superscript\":{}},\"fields\":[{\"id\":{\"base\":{}},\"node\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"e\"}}]}}},{\"id\":{\"exponent\":{}},\"node\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"x\"}},{\"character\":{\"_0\":\"y\"}}]}}}]}}}]}}}",
+        "originalLatex" : "e^{xy}",
+        "rawInput" : "e^{xy}",
+        "sourceExpression" : "e^{xy}"
+      },
+      "id" : "D803C31A-7016-432F-9F49-25EC78492E33",
+      "isVisible" : true,
+      "name" : "B02",
+      "style" : {
+        "colorToken" : "blue",
+        "fillOpacity" : 0.18,
+        "lineStyle" : "solid",
+        "lineWidth" : 2,
+        "opacity" : 1,
+        "pointSize" : 6
+      },
+      "type" : "function"
+    },
+    {
+      "expression" : {
+        "computeExpression" : "sqrt(x)",
+        "displayText" : "\\sqrt{x}",
+        "editorASTData" : "{\"cursor\":{\"offset\":0,\"path\":[]},\"root\":{\"sequence\":{\"_0\":[{\"template\":{\"_0\":{\"kind\":{\"sqrt\":{}},\"fields\":[{\"id\":{\"radicand\":{}},\"node\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"x\"}}]}}}]}}}]}}}",
+        "originalLatex" : "\\sqrt{x}",
+        "rawInput" : "\\sqrt{x}",
+        "sourceExpression" : "\\sqrt{x}"
+      },
+      "id" : "DDFCA4C4-4868-4CE1-AA3E-632540A1ACDE",
+      "isVisible" : true,
+      "name" : "C01",
+      "style" : {
+        "colorToken" : "blue",
+        "fillOpacity" : 0.18,
+        "lineStyle" : "solid",
+        "lineWidth" : 2,
+        "opacity" : 1,
+        "pointSize" : 6
+      },
+      "type" : "function"
+    },
+    {
+      "expression" : {
+        "computeExpression" : "sqrt((x)^(2)+(y)^(2))",
+        "displayText" : "\\sqrt{x^{2}+y^{2}}",
+        "editorASTData" : "{\"cursor\":{\"offset\":0,\"path\":[]},\"root\":{\"sequence\":{\"_0\":[{\"template\":{\"_0\":{\"kind\":{\"sqrt\":{}},\"fields\":[{\"id\":{\"radicand\":{}},\"node\":{\"sequence\":{\"_0\":[{\"template\":{\"_0\":{\"kind\":{\"superscript\":{}},\"fields\":[{\"id\":{\"base\":{}},\"node\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"x\"}}]}}},{\"id\":{\"exponent\":{}},\"node\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"2\"}}]}}}]}}},{\"operatorSymbol\":{\"_0\":\"+\"}},{\"template\":{\"_0\":{\"kind\":{\"superscript\":{}},\"fields\":[{\"id\":{\"base\":{}},\"node\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"y\"}}]}}},{\"id\":{\"exponent\":{}},\"node\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"2\"}}]}}}]}}}]}}}]}}}]}}}",
+        "originalLatex" : "\\sqrt{x^2+y^2}",
+        "rawInput" : "\\sqrt{x^{2}+y^{2}}",
+        "sourceExpression" : "\\sqrt{x^{2}+y^{2}}"
+      },
+      "id" : "F8A81DED-347F-43C6-B4D8-80D11B6580EF",
+      "isVisible" : true,
+      "name" : "C02",
+      "style" : {
+        "colorToken" : "blue",
+        "fillOpacity" : 0.18,
+        "lineStyle" : "solid",
+        "lineWidth" : 2,
+        "opacity" : 1,
+        "pointSize" : 6
+      },
+      "type" : "function"
+    },
+    {
+      "expression" : {
+        "computeExpression" : "(x)\/(y)",
+        "displayText" : "\\frac{x}{y}",
+        "editorASTData" : "{\"cursor\":{\"offset\":0,\"path\":[]},\"root\":{\"sequence\":{\"_0\":[{\"template\":{\"_0\":{\"kind\":{\"fraction\":{}},\"fields\":[{\"id\":{\"numerator\":{}},\"node\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"x\"}}]}}},{\"id\":{\"denominator\":{}},\"node\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"y\"}}]}}}]}}}]}}}",
+        "originalLatex" : "\\frac{x}{y}",
+        "rawInput" : "\\frac{x}{y}",
+        "sourceExpression" : "\\frac{x}{y}"
+      },
+      "id" : "CB4EEF6B-DC25-45A6-BD61-765269860041",
+      "isVisible" : true,
+      "name" : "D01",
+      "style" : {
+        "colorToken" : "blue",
+        "fillOpacity" : 0.18,
+        "lineStyle" : "solid",
+        "lineWidth" : 2,
+        "opacity" : 1,
+        "pointSize" : 6
+      },
+      "type" : "function"
+    },
+    {
+      "expression" : {
+        "computeExpression" : "(sqrt((x)^(2)+1))\/(a+b)",
+        "displayText" : "\\frac{\\sqrt{x^{2}+1}}{a+b}",
+        "editorASTData" : "{\"cursor\":{\"offset\":0,\"path\":[]},\"root\":{\"sequence\":{\"_0\":[{\"template\":{\"_0\":{\"kind\":{\"fraction\":{}},\"fields\":[{\"id\":{\"numerator\":{}},\"node\":{\"sequence\":{\"_0\":[{\"template\":{\"_0\":{\"kind\":{\"sqrt\":{}},\"fields\":[{\"id\":{\"radicand\":{}},\"node\":{\"sequence\":{\"_0\":[{\"template\":{\"_0\":{\"kind\":{\"superscript\":{}},\"fields\":[{\"node\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"x\"}}]}},\"id\":{\"base\":{}}},{\"node\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"2\"}}]}},\"id\":{\"exponent\":{}}}]}}},{\"operatorSymbol\":{\"_0\":\"+\"}},{\"character\":{\"_0\":\"1\"}}]}}}]}}}]}}},{\"id\":{\"denominator\":{}},\"node\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"a\"}},{\"operatorSymbol\":{\"_0\":\"+\"}},{\"character\":{\"_0\":\"b\"}}]}}}]}}}]}}}",
+        "originalLatex" : "\\frac{\\sqrt{x^2+1}}{a+b}",
+        "rawInput" : "\\frac{\\sqrt{x^{2}+1}}{a+b}",
+        "sourceExpression" : "\\frac{\\sqrt{x^{2}+1}}{a+b}"
+      },
+      "id" : "81AC301A-50B2-4440-9648-896BD8C93AC0",
+      "isVisible" : true,
+      "name" : "D02",
+      "style" : {
+        "colorToken" : "blue",
+        "fillOpacity" : 0.18,
+        "lineStyle" : "solid",
+        "lineWidth" : 2,
+        "opacity" : 1,
+        "pointSize" : 6
+      },
+      "type" : "function"
+    },
+    {
+      "expression" : {
+        "computeExpression" : "(x_(i))^(2)",
+        "displayText" : "{x_{i}}^{2}",
+        "editorASTData" : "{\"cursor\":{\"offset\":0,\"path\":[]},\"root\":{\"sequence\":{\"_0\":[{\"template\":{\"_0\":{\"kind\":{\"superscript\":{}},\"fields\":[{\"id\":{\"base\":{}},\"node\":{\"sequence\":{\"_0\":[{\"template\":{\"_0\":{\"kind\":{\"subscriptTemplate\":{}},\"fields\":[{\"id\":{\"base\":{}},\"node\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"x\"}}]}}},{\"id\":{\"subscriptField\":{}},\"node\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"i\"}}]}}}]}}}]}}},{\"id\":{\"exponent\":{}},\"node\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"2\"}}]}}}]}}}]}}}",
+        "originalLatex" : "x_i^2",
+        "rawInput" : "x_{i}^{2}",
+        "sourceExpression" : "x_{i}^{2}"
+      },
+      "id" : "CD1FD6EF-ECE9-4323-B426-0C3A5739587E",
+      "isVisible" : true,
+      "name" : "E01",
+      "style" : {
+        "colorToken" : "blue",
+        "fillOpacity" : 0.18,
+        "lineStyle" : "solid",
+        "lineWidth" : 2,
+        "opacity" : 1,
+        "pointSize" : 6
+      },
+      "type" : "function"
+    },
+    {
+      "expression" : {
+        "computeExpression" : "\\left(\\frac{x+1}{x-1}\\right)^2",
+        "displayText" : "\\left(\\frac{x+1}{x-1}\\right)^2",
+        "editorASTData" : "{\"cursor\":{\"offset\":0,\"path\":[]},\"root\":{\"sequence\":{\"_0\":[{\"character\":{\"_0\":\"\\\\\"}},{\"character\":{\"_0\":\"l\"}},{\"character\":{\"_0\":\"e\"}},{\"character\":{\"_0\":\"f\"}},{\"character\":{\"_0\":\"t\"}},{\"character\":{\"_0\":\"(\"}},{\"character\":{\"_0\":\"\\\\\"}},{\"character\":{\"_0\":\"f\"}},{\"character\":{\"_0\":\"r\"}},{\"character\":{\"_0\":\"a\"}},{\"character\":{\"_0\":\"c\"}},{\"character\":{\"_0\":\"{\"}},{\"character\":{\"_0\":\"x\"}},{\"character\":{\"_0\":\"+\"}},{\"character\":{\"_0\":\"1\"}},{\"character\":{\"_0\":\"}\"}},{\"character\":{\"_0\":\"{\"}},{\"character\":{\"_0\":\"x\"}},{\"character\":{\"_0\":\"-\"}},{\"character\":{\"_0\":\"1\"}},{\"character\":{\"_0\":\"}\"}},{\"character\":{\"_0\":\"\\\\\"}},{\"character\":{\"_0\":\"r\"}},{\"character\":{\"_0\":\"i\"}},{\"character\":{\"_0\":\"g\"}},{\"character\":{\"_0\":\"h\"}},{\"character\":{\"_0\":\"t\"}},{\"character\":{\"_0\":\")\"}},{\"character\":{\"_0\":\"^\"}},{\"character\":{\"_0\":\"2\"}}]}}}",
+        "originalLatex" : "\\left(\\frac{x+1}{x-1}\\right)^2",
+        "rawInput" : "\\left(\\frac{x+1}{x-1}\\right)^2",
+        "sourceExpression" : "\\left(\\frac{x+1}{x-1}\\right)^2"
+      },
+      "id" : "1590E87D-70AB-44DD-B7B0-64C77AF99BF8",
+      "isVisible" : true,
+      "name" : "F01",
+      "style" : {
+        "colorToken" : "blue",
+        "fillOpacity" : 0.18,
+        "lineStyle" : "solid",
+        "lineWidth" : 2,
+        "opacity" : 1,
+        "pointSize" : 6
+      },
+      "type" : "function"
+    }
+  ],
+  "packageStructure" : {
+    "assetsPath" : "assets\/",
+    "graphsPath" : "graphs\/",
+    "notebookJSONPath" : "notebook.json",
+    "pluginsPath" : "plugins\/",
+    "previewPNGPath" : "preview.png",
+    "projectJSONPath" : "project.json"
+  }
+}
